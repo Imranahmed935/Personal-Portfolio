@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Project from "./Components/Projects/Project";
 import Skills from "./Components/Skills/Skills";
 
+
 function App() {
   return (
     <div>

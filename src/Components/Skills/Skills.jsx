@@ -11,7 +11,7 @@ import node1 from "../../assets/skills/node44.jpg";
 
 const Skills = () => {
   return (
-    <div className="lg:mt-32 bg-slate-100 p-4  rounded lg:w-8/12 mx-auto">
+    <div id="skills" className="lg:mt-32 bg-slate-100 p-4  rounded lg:w-8/12 mx-auto">
       <h1 className="text-3xl font-bold">Essential Tools I use</h1>
       <p className="text-xl text-gray-600">
         Building great websites with modern tools and technologies.

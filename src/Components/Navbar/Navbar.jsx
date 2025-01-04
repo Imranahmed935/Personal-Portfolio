@@ -1,4 +1,5 @@
 import React from "react";
+import picture from "../../assets/images/portfolio.png";
 
 const Navbar = () => {
   return (
@@ -47,10 +48,10 @@ const Navbar = () => {
             <a>Home</a>
           </li>
           <li>
-            <a>Projects</a>
+            <a href="#project">Projects</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -58,7 +59,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline rounded-full">Download CV</a>
+        <button>
+          <a
+            href={picture}
+            download="My_CV.png"
+            className="btn btn-outline rounded-full"
+          >
+            Download CV
+          </a>
+        </button>
       </div>
     </div>
   );

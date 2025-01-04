@@ -3,7 +3,7 @@ import logo from '../../assets/images/portfolio.png'
 
 const About = () => {
   return (
-    <div className="lg:w-8/12 mt-10 mx-auto space-y-4 bg-slate-100 p-4 rounded">
+    <div id="about" className="lg:w-8/12 mt-10 mx-auto space-y-4 bg-slate-100 p-4 rounded">
       <h1 className="text-3xl font-bold">About Me</h1>
       <p className="text-xl text-gray-600">
         Hello, I’m Imran Ahmed, a dedicated Frontend Developer with a focus on
