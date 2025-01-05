@@ -3,7 +3,7 @@ import picture from "../../assets/images/portfolio.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar lg:w-8/12 mx-auto ">
+    <div className="navbar bg-[#d6eff5a2] lg:w-8/12 mx-auto fixed top-0 left-0 right-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,25 +27,31 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a>About</a>
+              <a href="#project">Projects</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-        <a className="text-3xl font-bold text-black">Imran</a>
+        <a className="text-2xl p-2 font-bold text-[#0d9488] ">Imran</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu text-white menu-horizontal  px-6 bg-gray-800 rounded-full">
+        <ul className="menu text-white menu-horizontal px-6 bg-[#0d9488] rounded-full">
           <li>
-            <a>Home</a>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
           </li>
           <li>
             <a href="#project">Projects</a>
@@ -63,7 +69,7 @@ const Navbar = () => {
           <a
             href={picture}
             download="My_CV.png"
-            className="btn btn-outline rounded-full"
+            className="btn bg-[#0d9488] text-white rounded-full"
           >
             Download CV
           </a>
