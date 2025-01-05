@@ -22,7 +22,7 @@ const Skills = () => {
         id="skills"
         className="w-8/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
       >
-        {[
+        {[ 
           { src: html1, title: "HTML", description: "Web Structure" },
           { src: css1, title: "CSS", description: "User Interface" },
           { src: tail1, title: "TailwindCSS", description: "UI Design" },
@@ -35,7 +35,7 @@ const Skills = () => {
         ].map(({ src, title, description }) => (
           <div
             key={title}
-            className="bg-white rounded-lg transition-all duration-300 ease-in-out"
+            className="bg-white rounded-lg border border-gray-300 hover:border-teal-500 transition-all duration-300 ease-in-out p-4"
           >
             <div className="flex justify-center items-center mb-4">
               <img className="w-24 h-24 rounded-full object-cover" src={src} alt={title} />
@@ -44,9 +44,7 @@ const Skills = () => {
               <h2 className="text-xl font-bold text-gray-800 mb-2">
                 {title}
               </h2>
-              <p className="text-sm text-gray-600">
-                {description}
-              </p>
+              <p className="text-sm text-gray-600">{description}</p>
             </div>
           </div>
         ))}

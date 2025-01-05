@@ -3,10 +3,13 @@ import picture from "../../assets/images/banner-2.png";
 
 const Banner = () => {
   return (
-    <div id="home" className="bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2] lg:w-8/12 mx-auto sm:flex items-center sm:p-16">
-      <div className="lg:w-3/4 space-y-6 px-2 mt-4">
-        <h1 className="text-xl font-semibold">Welcome! I’m Imran Ahmed.</h1>
-        <p className="lg:text-5xl text-3 font-bold text-gray-600">
+    <div
+      id="home"
+      className="bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2] lg:w-8/12 mx-auto sm:flex items-center sm:p-16"
+    >
+      <div className="lg:w-3/4 space-y-6 px-2 p-24">
+        <h1 className="text-xl lg:font-semibold">Welcome! I’m Imran Ahmed.</h1>
+        <p className="lg:text-5xl text-4xl font-bold text-gray-600">
           A passionate Frontend Web Developer.
         </p>
         <p className="text-gray-600">
@@ -23,7 +26,7 @@ const Banner = () => {
           </a>
         </button>
       </div>
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 hidden sm:block">
         <img className="px-2 rounded-full -ml-16" src={picture} alt="" />
       </div>
     </div>
