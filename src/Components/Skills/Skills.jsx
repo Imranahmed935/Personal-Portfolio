@@ -8,7 +8,7 @@ import tail1 from "../../assets/skills/tailwind.png";
 import react from "../../assets/skills/react.png";
 import ex1 from "../../assets/skills/e555.webp";
 import node1 from "../../assets/skills/node44.jpg";
-import nextjs from '../../assets/skills/nextj.png'
+import nextjs from '../../assets/skills/nextj.png';
 
 const Skills = () => {
   return (
@@ -34,10 +34,15 @@ const Skills = () => {
           { src: image1, title: "MongoDB", description: "Database" },
           { src: node1, title: "NodeJS", description: "Web Server" },
           { src: ex1, title: "ExpressJS", description: "Node Framework" },
-        ].map(({ src, title, description }) => (
+        ].map(({ src, title, description }, index) => (
           <div
             key={title}
             className="bg-white rounded-lg border border-gray-300 hover:border-teal-500 transition-all duration-300 ease-in-out p-4"
+            data-aos="flip-left"
+            data-aos-delay={index * 100}
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="200"
           >
             <div className="flex justify-center items-center mb-4">
               <img className="w-24 h-24 rounded-full object-cover" src={src} alt={title} />

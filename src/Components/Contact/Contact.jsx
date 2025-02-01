@@ -1,10 +1,7 @@
-import React, { useRef } from "react";
-import {
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  
-} from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdLocalPhone } from "react-icons/md";
 import emailjs from "@emailjs/browser";
@@ -12,6 +9,10 @@ import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -38,13 +39,14 @@ const Contact = () => {
     <div
       id="contact"
       className="lg:mt-32 p-6 lg:w-8/12 mx-auto bg-gray-50 rounded-xl shadow-lg"
+      data-aos="zoom-in"
     >
-      <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">
+      <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8" data-aos="fade-up">
         Get in Touch
       </h2>
-      <section className="bg-white py-12 lg:px-10 px-4 rounded-lg">
+      <section className="bg-white py-12 lg:px-10 px-4 rounded-lg" data-aos="fade-up">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-5/12 space-y-8">
+          <div className="lg:w-5/12 space-y-8" data-aos="fade-right">
             <div className="bg-teal-600 p-6 rounded-lg shadow-lg text-white">
               <p className="text-lg">
                 Have a question or want to work together? Feel free to reach
@@ -90,11 +92,11 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form Section */}
           <form
             ref={form}
             onSubmit={sendEmail}
             className="w-full lg:w-6/12 bg-white rounded-lg p-8 space-y-6"
+            data-aos="fade-left"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
@@ -123,7 +125,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="from_"
+                  name="from_email"
                   className="mt-1 block w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Your Email"
                   required
@@ -139,16 +141,17 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
-                name="messagel"
+                name="message"
                 rows="4"
-                className="mt-1 block w-full p-3 border rounded-lg  focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="mt-1 block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                 placeholder="Your Message"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full relative overflow-hidden py-3 bg-teal-600 text-white font-semibold rounded-md  hover:text-teal-600 transition-all duration-300 group"
+              className="w-full relative overflow-hidden py-3 bg-teal-600 text-white font-semibold rounded-md hover:text-teal-600 transition-all duration-300 group"
+              data-aos="fade-up"
             >
               <span className="relative z-10">Send Message</span>
               <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
