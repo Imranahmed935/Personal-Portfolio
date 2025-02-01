@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaArrowUp } from "react-icons/fa";
 import pickify from "../../assets/pickify/pickify.png";
 import champion from "../../assets/pickify/champion-2.png";
 import pms from "../../assets/pickify/pms.png";

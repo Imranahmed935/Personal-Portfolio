@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="navbar-end">
           <a
-            href="https://drive.google.com/uc?export=download&id=1-4TDgLsnwXCmnJ1un6M1z3b6-n0APVZl"
+            href="https://drive.google.com/uc?export=download&id=1zAAAhgU7BHi2ixys3fUP2d1iSdrw-v2e"
             className="btn bg-[#0d9488] text-white hover:text-[#0d9488] transition-all duration-300 rounded-full relative overflow-hidden group"
             download
           >
