@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
 import {
   FaEnvelope,
-  FaFacebook,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
+  
 } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdLocalPhone } from "react-icons/md";
@@ -36,14 +35,20 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="lg:mt-44 p-6 lg:w-8/12 mx-auto bg-gray-50 rounded-xl shadow-lg">
-      <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">Get in Touch</h2>
+    <div
+      id="contact"
+      className="lg:mt-32 p-6 lg:w-8/12 mx-auto bg-gray-50 rounded-xl shadow-lg"
+    >
+      <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">
+        Get in Touch
+      </h2>
       <section className="bg-white py-12 lg:px-10 px-4 rounded-lg">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-5/12 space-y-8">
             <div className="bg-teal-600 p-6 rounded-lg shadow-lg text-white">
               <p className="text-lg">
-                Have a question or want to work together? Feel free to reach out.
+                Have a question or want to work together? Feel free to reach
+                out.
               </p>
             </div>
             <div className="space-y-4">
@@ -53,44 +58,33 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-4 border-b-2 pb-3 border-gray-200">
                 <FaEnvelope className="text-teal-500" />
-                <p className="text-lg text-gray-800">imrantahir9918@gmail.com</p>
+                <p className="text-lg text-gray-800">
+                  imrantahir9918@gmail.com
+                </p>
               </div>
               <div className="flex items-center gap-4 border-b-2 pb-3 border-gray-200">
                 <FaMapLocationDot className="text-teal-500" />
-                <p className="text-lg text-gray-800">Companiganj, Sylhet, Bangladesh</p>
+                <p className="text-lg text-gray-800">
+                  Companiganj, Sylhet, Bangladesh
+                </p>
               </div>
               <div className="flex gap-4 pt-6">
                 <a
-                  href="https://www.linkedin.com/in/example"
+                  href="https://www.linkedin.com/in/imran-ahmed-frontend-developer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-teal-500 transition"
                 >
                   <FaLinkedin />
                 </a>
+
                 <a
-                  href="https://www.facebook.com/example"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-2xl hover:text-blue-600 transition"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://github.com/example"
+                  href="https://github.com/Imranahmed935"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-gray-800 transition"
                 >
                   <FaGithub />
-                </a>
-                <a
-                  href="https://twitter.com/example"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-2xl hover:text-blue-400 transition"
-                >
-                  <FaTwitter />
                 </a>
               </div>
             </div>
@@ -154,9 +148,10 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full py-3 bg-teal-600 text-white font-semibold rounded-md shadow-md hover:bg-teal-700 transition"
+              className="w-full relative overflow-hidden py-3 bg-teal-600 text-white font-semibold rounded-md  hover:text-teal-600 transition-all duration-300 group"
             >
-              Send Message
+              <span className="relative z-10">Send Message</span>
+              <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
           </form>
         </div>

@@ -1,58 +1,47 @@
 import React from "react";
-import port1 from "../../assets/Port/session1.jpg";
-import port2 from "../../assets/Port/session2.webp";
-import port3 from "../../assets/Port/session3.jpg";
 import { FaArrowUp } from "react-icons/fa";
+import pickify from '../../assets/pickify/pickify.png'
+import champion from '../../assets/pickify/champion-2.png'
+import pms from '../../assets/pickify/pms.png'
 
 const projects = [
   {
     id: 1,
-    name: "Frontend Project 1",
-    image: port1,
+    name: "Product Recommendation System",
+    client:'https://github.com/Imranahmed935/Pickify',
+    server:'https://github.com/Imranahmed935/Pickify_server',
+    image: pickify,
     link: "https://dazzling-horse-41d2d8.netlify.app",
   },
   {
     id: 2,
-    name: "Frontend Project 2",
-    image: port2,
-    link: "https://stellar-moonbeam-2044ff.netlify.app",
+    name: "E-commerce website",
+    client:'https://github.com/Imranahmed935/Champion',
+    server:'https://github.com/Imranahmed935/Champion-Server',
+    image: champion,
+    link: "https://fir-two-e9ce5.web.app",
   },
   {
     id: 3,
-    name: "Frontend Project 3",
-    image: port3,
-    link: "https://dazzling-horse-41d2d8.netlify.app",
+    name: "Parcel Management system",
+    client:'https://github.com/Imranahmed935/Parcel-Management-Client',
+    server:'https://github.com/Imranahmed935/Parcel-Management-Server',
+    image: pms,
+    link: "https://swiftships.netlify.app",
   },
-  {
-    id: 4,
-    name: "Frontend Project 4",
-    image: port2,
-    link: "https://stellar-moonbeam-2044ff.netlify.app",
-  },
-  {
-    id: 5,
-    name: "Frontend Project 5",
-    image: port3,
-    link: "https://dazzling-horse-41d2d8.netlify.app",
-  },
-  {
-    id: 6,
-    name: "Frontend Project 6",
-    image: port1,
-    link: "https://stellar-moonbeam-2044ff.netlify.app",
-  },
+
 ];
 
 const Project = () => {
   return (
-    <div id="project" className="lg:mt-44 lg:w-8/12 mx-auto px-4 lg:px-0">
+    <div id="project" className="lg:mt-32 lg:w-8/12 mx-auto px-4 lg:px-0">
       <h1 className="text-4xl text-center font-bold text-gray-800">
         My Projects
       </h1>
       <p className="text-lg text-center py-2 mb-8 text-gray-600">
         Here’s a collection of projects that demonstrate my skills and creativity.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gray-100 p-4">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -78,6 +67,19 @@ const Project = () => {
             </div>
           </div>
         ))}
+        {
+          projects.map(project =>(
+           <div className="space-y-2" key={project.id}>
+             <h1 className="text-lg">{project?.name}</h1>
+            <div className="flex gap-10">
+              <a className="font-bold text-blue-500" href={project.client}>Client</a>
+              <a className="font-bold text-blue-500" href={project.server}>Server</a>
+              <a className="font-bold text-blue-500" href={project.link}>Live</a>
+            </div>
+           </div>
+            
+          ))
+        }
       </div>
     </div>
   );

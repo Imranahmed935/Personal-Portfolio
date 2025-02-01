@@ -8,10 +8,11 @@ import tail1 from "../../assets/skills/tailwind.png";
 import react from "../../assets/skills/react.png";
 import ex1 from "../../assets/skills/e555.webp";
 import node1 from "../../assets/skills/node44.jpg";
+import nextjs from '../../assets/skills/nextj.png'
 
 const Skills = () => {
   return (
-    <div className="lg:mt-44 px-8 py-12 bg-base-100">
+    <div className="lg:mt-32 px-8 py-12 ">
       <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-6">
         My Skills
       </h1>
@@ -20,14 +21,15 @@ const Skills = () => {
       </p>
       <div
         id="skills"
-        className="w-8/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
+        className="w-8/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 bg-gray-100 p-4"
       >
         {[ 
           { src: html1, title: "HTML", description: "Web Structure" },
           { src: css1, title: "CSS", description: "User Interface" },
           { src: tail1, title: "TailwindCSS", description: "UI Design" },
           { src: java1, title: "JavaScript", description: "Interactivity" },
-          { src: react, title: "React", description: "Framework" },
+          { src: react, title: "React", description: "Library" },
+          { src: nextjs, title: "Next.js", description: "Framework" },
           { src: git1, title: "Git", description: "Version Control" },
           { src: image1, title: "MongoDB", description: "Database" },
           { src: node1, title: "NodeJS", description: "Web Server" },

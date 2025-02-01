@@ -1,5 +1,4 @@
 import React from "react";
-import picture from "../../assets/images/portfolio.png";
 
 const Navbar = () => {
   return (
@@ -65,15 +64,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button>
+        <div className="navbar-end">
           <a
-            href={picture}
-            download="My_CV.png"
-            className="btn bg-[#0d9488] text-white rounded-full"
+            href="https://drive.google.com/uc?export=download&id=1-4TDgLsnwXCmnJ1un6M1z3b6-n0APVZl"
+            className="btn bg-[#0d9488] text-white hover:text-[#0d9488] transition-all duration-300 rounded-full relative overflow-hidden group"
+            download
           >
-            Download CV
+            <span className="relative z-10">Download Resume</span>
+            <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
           </a>
-        </button>
+        </div>
       </div>
     </div>
   );
