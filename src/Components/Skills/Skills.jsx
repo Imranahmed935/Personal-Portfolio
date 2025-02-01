@@ -21,7 +21,7 @@ const Skills = () => {
       </p>
       <div
         id="skills"
-        className="w-8/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 bg-gray-100 p-4"
+        className="w-8/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  p-4"
       >
         {[ 
           { src: html1, title: "HTML", description: "Web Structure" },

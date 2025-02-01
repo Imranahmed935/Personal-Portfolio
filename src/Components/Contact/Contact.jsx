@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="lg:mt-32 p-6 lg:w-8/12 mx-auto bg-gray-50 rounded-xl shadow-lg"
+      className="lg:mt-32 p-6 lg:w-8/12 mx-auto bg-gray-50 rounded-xl "
       data-aos="zoom-in"
     >
       <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8" data-aos="fade-up">

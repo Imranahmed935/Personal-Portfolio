@@ -11,12 +11,14 @@ import Skills from "./Components/Skills/Skills";
 function App() {
   return (
     <div>
+      <div className="bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2]">
       <Navbar/>
       <Banner/>
       <About/>
       <Skills/>
       <Project/>
       <Contact/>
+      </div>
       <Footer/>
     </div>
   );

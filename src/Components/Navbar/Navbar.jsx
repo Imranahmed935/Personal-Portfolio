@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-[#d6eff5a2] lg:w-8/12 mx-auto fixed top-0 left-0 right-0 z-50">
+    <div className="navbar bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2] lg:w-8/12 mx-auto fixed top-0 left-0 right-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

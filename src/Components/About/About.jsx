@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="lg:mt-32 px-6">
+    <div id="about" className="lg:mt-32 px-6 a">
       {/* About Me Heading */}
       <div className="text-center">
         <h1 
@@ -36,7 +36,7 @@ const About = () => {
       <div 
         data-aos="fade-up" 
         data-aos-delay="300" 
-        className="lg:w-8/12 mx-auto mt-12 flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg"
+        className="lg:w-8/12 mx-auto mt-12 flex flex-col lg:flex-row items-center  rounded-lg"
       >
         {/* Left Image Section */}
         <div className="lg:w-4/12">

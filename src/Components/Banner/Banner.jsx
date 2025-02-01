@@ -13,9 +13,10 @@ const Banner = () => {
   }, []);
 
   return (
-    <div
+    <div className="bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2]">
+      <div
       id="home"
-      className="bg-gradient-to-b from-[#def1f6a2] to-[#ecf6f9a2] lg:w-8/12 mx-auto sm:flex items-center sm:p-16"
+      className=" lg:w-8/12 mx-auto sm:flex items-center sm:p-16"
     >
       {/* Left Section */}
       <div className="lg:w-3/4 space-y-6 px-2 p-24">
@@ -66,6 +67,7 @@ const Banner = () => {
           alt="Banner"
         />
       </div>
+    </div>
     </div>
   );
 };
