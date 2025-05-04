@@ -9,6 +9,8 @@ import react from "../../assets/skills/react.png";
 import ex1 from "../../assets/skills/e555.webp";
 import node1 from "../../assets/skills/node44.jpg";
 import nextjs from '../../assets/skills/nextj.png';
+import mongo1 from '../../assets/skills/mongoose.png'
+import TypeScript1 from '../../assets/skills/typescript image.png'
 
 const Skills = () => {
   return (
@@ -28,10 +30,12 @@ const Skills = () => {
           { src: css1, title: "CSS", description: "User Interface" },
           { src: tail1, title: "TailwindCSS", description: "UI Design" },
           { src: java1, title: "JavaScript", description: "Interactivity" },
+          { src: TypeScript1, title: "TypeScript", description: "Typed superset of JavaScript" },
           { src: react, title: "React", description: "Library" },
           { src: nextjs, title: "Next.js", description: "Framework" },
           { src: git1, title: "Git", description: "Version Control" },
           { src: image1, title: "MongoDB", description: "Database" },
+          { src: mongo1, title: "Mongoose", description: "MongoDB ODM" },
           { src: node1, title: "NodeJS", description: "Web Server" },
           { src: ex1, title: "ExpressJS", description: "Node Framework" },
         ].map(({ src, title, description }, index) => (
